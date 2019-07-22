@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p dist/css
+node node_modules/node-sass/bin/node-sass --watch ./assets/css --output ./dist/css &
+node node_modules/live-server/live-server.js --ignore=dist,.git ./

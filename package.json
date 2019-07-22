@@ -1,0 +1,17 @@
+{
+  "name": "quick_app",
+  "version": "1.0.0",
+  "description": "A Front-End Setup for Quick Prototyping",
+  "main": "app.js",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./run || echo \"is the run script not executable?\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Ramsdell",
+  "license": "MIT"
+}

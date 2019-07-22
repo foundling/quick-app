@@ -1,0 +1,4 @@
+# Exclude everything in this dir from versioning, except for .gitignore
+*
+!.gitignore
+!css

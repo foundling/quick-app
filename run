@@ -1,3 +1,14 @@
 #!/bin/bash
 
-echo "RUNNNNN"
+# todo: name node-sass and live-server processes something standard
+# so they can be automatically terminated when this script starts
+
+# initial compilation before watch started
+node node_modules/node-sass/bin/node-sass ./assets/css/main.scss ./dist/css/main.css
+
+# start watch
+node node_modules/node-sass/bin/node-sass --watch ./assets/css --output ./dist/css &
+
+
+# start live server
+node node_modules/live-server/live-server.js --ignore=dist,.git ./
